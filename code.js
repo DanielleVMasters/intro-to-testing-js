@@ -12,8 +12,10 @@ function subtract(x, y){
 }
 
 function sayHello(input){
-    if(input === "Alex" || "Jane" || "Pat") {
-        return "Hello, " + input + "!";
+    if (input === false) {
+        return "Hello, World!"
+    } else if(input === "Alex" || "Jane" || "Pat") {
+            return "Hello, " + input + "!";
     } else{
         return ""
     }

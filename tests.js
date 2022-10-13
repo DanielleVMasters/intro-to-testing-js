@@ -45,4 +45,7 @@ describe("sayHello", function(){
     it("should return hello, Pat! when called Pat.", function (){
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
+    it("should return hello, world", function(){
+        expect(sayHello(false)).toBe("Hello, World!")
+    })
 })
