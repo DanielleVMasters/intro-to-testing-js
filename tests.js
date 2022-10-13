@@ -13,3 +13,27 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+describe("subtract", function(){
+    it("should be a defined function", function() {
+        expect(typeof subtract).toBe("function")
+    })
+    it("should return a number when passed two number arguments", function(){
+        expect(typeof subtract(3,1)).toBe("number")
+    })
+    it("should return false when any argument that is not a number", function() {
+        expect(subtract()).toBe(false);
+        expect(subtract(2)).toBe(false);
+        expect(subtract("banana",6)).toBe(false);
+    });
+    it("should return 34 when passed the argument of 64 and 30", function(){
+        expect(subtract(64, 30)).toBe(34);
+
+    })
+})
+
+describe("sayHello", function(){
+    it("should return a string when called.", function (){
+        expect(typeof sayHello()).toBe("string");
+    })
+})
