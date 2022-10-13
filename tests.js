@@ -36,4 +36,13 @@ describe("sayHello", function(){
     it("should return a string when called.", function (){
         expect(typeof sayHello()).toBe("string");
     })
+    it("should return hello, Jane! when called Jane.", function (){
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    })
+    it("should return hello, Alex! when called Alex.", function (){
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    })
+    it("should return hello, Pat! when called Pat.", function (){
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    })
 })
